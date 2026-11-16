@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<!-- Include the header/nav bar -->
+<%- include('components/header') %>
+
+<!---- Home page content -->
+<section class="text-center my-5">
+  <!-- CHANGE to your actual profile image name -->
+  <img src="/images/profile.jpg" alt="Photo of Jerinmuth" class="rounded-circle" width="150">
+  <h1>Hi, I'm Jerinmuth</h1>
+  <p>Welcome to my portfolio.</p>
+  <a href="/projects" class="btn btn-primary">See My Projects</a>
+</section>
+
+<!-- Include the footer -->
+<%- include('components/footer') %>

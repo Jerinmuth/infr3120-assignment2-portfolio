@@ -1,8 +1,330 @@
+
+
+@media (max-width: 480px) {
+/*phone view is 480px and  narrow */
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    background: linear-gradient(45deg, #3D4899, #962EFF);
+    margin: 0;
+    padding: 0;
 }
 
-a {
-  color: #00B7FF;
+#wrapper {
+    width: 100%;
+    background-color: white;
+}
+
+header {
+    background: linear-gradient(135deg, #3D4899, #962EFF);
+    color: white;
+    padding: 15px;
+}
+
+header h1 {
+    color: #E6C11E;
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+}
+
+/* Navigation links stack vertically on phone */
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #B4C73C;
+    color: #3D4899;
+}
+
+main {
+    padding: 15px;
+}
+
+main h2 {
+    color: #3D4899;
+    border-bottom: 3px solid #B4C73C;
+    padding-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+footer {
+    background: linear-gradient(135deg, #3D4899, #962EFF);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+footer a {
+    color: #E6C11E;
+}
+
+/* Inputs take full width */
+input, textarea {
+    padding: 10px;
+    border: 2px solid #3D4899;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* Submit button is larger for touch screens */
+input[type="submit"] {
+    background: linear-gradient(45deg, #3D4899, #962EFF);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 15px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+}
+@media (min-width: 481px) and (max-width: 960px) {
+
+/*tablet view: 481px to 960px*/
+
+body {
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    background: linear-gradient(45deg, #3D4899, #962EFF);
+    margin: 0;
+    padding: 0;
+}
+
+/*wrapper takes 100% screen width*/
+#wrapper {
+    width: 100%;
+    background-color: white;
+}
+
+header {
+    background: linear-gradient(135deg, #3D4899, #962EFF);
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    color: #E6C11E;
+    margin: 0 0 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #B4C73C;
+    color: #3D4899;
+}
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    color: #3D4899;
+    border-bottom: 3px solid #B4C73C;
+    padding-bottom: 8px;
+}
+
+footer {
+    background: linear-gradient(135deg, #3D4899, #962EFF);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #E6C11E;
+}
+
+/*inputs takes full width on tablet */
+input, textarea {
+    padding: 10px;
+    border: 2px solid #3D4899;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background: linear-gradient(45deg, #3D4899, #962EFF);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px 24px;
+    width: auto;
+}
+
+/*video and images scales to fit */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+}
+
+/*
+   The Colour Palette
+   #3D4899 = Dark Blue
+   #962EFF = Purple
+   #B4C73C = Lime Green
+   #E6C11E = Gold
+   #56F074 = Light Green
+   */
+
+/*body has a linear gradient background at 45 degrees*/
+body {
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    background: linear-gradient(45deg, #3D4899, #962EFF);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/*wrapper keeps content centered at 960px*/
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 600px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/*header uses an angled gradient at 135 degrees*/
+header {
+    background: linear-gradient(135deg, #3D4899, #962EFF);
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    color: #E6C11E;
+    font-size: 2rem;
+}
+
+/*navigation links*/
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/*hover effect on nav links*/
+nav a:hover {
+    background-color: #B4C73C;
+    color: #3D4899;
+}
+
+/*main content area*/
+main {
+    padding: 25px;
+    min-height: 400px;
+}
+
+main h2 {
+    color: #3D4899;
+    border-bottom: 3px solid #B4C73C;
+    padding-bottom: 8px;
+}
+
+main h3 {
+    color: #962EFF;
+}
+
+/*AAbout me form input fields*/
+input, textarea {
+    padding: 10px;
+    border: 2px solid #3D4899;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: #962EFF;
+    outline: none;
+    box-shadow: 0 0 5px #962EFF;
+}
+
+/*submit button*/
+input[type="submit"] {
+    background: linear-gradient(45deg, #3D4899, #962EFF);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px 24px;
+    width: auto;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/*footer angled gradient*/
+footer {
+    background: linear-gradient(135deg, #3D4899, #962EFF);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #E6C11E;
+}
+
+footer a:hover {
+    color: #B4C73C;
+}
+
+/*video styling*/
+video {
+    border: 3px solid #3D4899;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    margin-top: 10px;
+}
+
+/*image styling*/
+img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    margin: 10px 0;
 }

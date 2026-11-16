@@ -8,7 +8,7 @@ router.get('/', function(req, res) {
 
 // 2. About Me page route
 router.get('/about', function(req, res) {
-  res.render('about', { title: 'About Me' });
+  res.render('aboutme', { title: 'About Me' });
 });
 
 // 3. Projects page route

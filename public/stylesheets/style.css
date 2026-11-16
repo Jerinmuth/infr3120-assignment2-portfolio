@@ -1,330 +1,153 @@
+/* =========================================
+   1. GLOBAL SETTINGS (applies everywhere)
+   ========================================= */
 
-
-@media (max-width: 480px) {
-/*phone view is 480px and  narrow */
-
+/* This sets the default font for the ENTIRE site */
 body {
-    font-family: Verdana, Geneva, Arial, sans-serif;
-    background: linear-gradient(45deg, #3D4899, #962EFF);
-    margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* clean, modern font */
+    font-size: 16px;         /* standard readable size */
+    background-color: #121212; /* very dark grey background */
+    color: #ffffff;            /* white text everywhere */
+    line-height: 1.6;          /* space between lines for readability */
 }
 
-#wrapper {
-    width: 100%;
-    background-color: white;
+/* Make all headings bigger and bolder */
+h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; }
+h2 { font-size: 2rem;   font-weight: 600; margin-bottom: 0.8rem; }
+h3 { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.6rem; }
+
+/* Links should be a nice bright colour so they show up on dark */
+a { color: #4da3ff; text-decoration: none; }
+a:hover { color: #ffffff; text-decoration: underline; }
+
+/* =========================================
+   2. NAVBAR (top menu)
+   ========================================= */
+
+/* The bar at the top of the page */
+.navbar {
+    background-color: #1a1a1a !important; /* dark grey bar */
+    border-bottom: 2px solid #4da3ff;      /* thin blue line under it */
 }
 
-header {
-    background: linear-gradient(135deg, #3D4899, #962EFF);
-    color: white;
-    padding: 15px;
-}
-
-header h1 {
-    color: #E6C11E;
-    margin: 0 0 10px 0;
-    font-size: 1.5rem;
-}
-
-/* Navigation links stack vertically on phone */
-nav a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 12px;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+/* The "Jerinmuth" logo text on the left */
+.navbar-brand {
+    color: #ffffff !important; /* white text */
     font-weight: bold;
+    font-size: 1.4rem;
 }
 
-nav a:hover {
-    background-color: #B4C73C;
-    color: #3D4899;
+/* The navigation links (Home, About, etc.) */
+.nav-link {
+    color: #d1d1d1 !important; /* light grey text */
+    font-weight: 500;
+}
+.nav-link:hover {
+    color: #4da3ff !important; /* blue on hover */
 }
 
+/* =========================================
+   3. PAGE CONTENT (the "main" area)
+   ========================================= */
+
+/* The main content wrapper */
 main {
-    padding: 15px;
+    background-color: #1e1e1e; /* slightly lighter than body */
+    padding: 30px;
+    border-radius: 10px;       /* rounded corners */
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5); /* soft shadow */
 }
 
-main h2 {
-    color: #3D4899;
-    border-bottom: 3px solid #B4C73C;
-    padding-bottom: 8px;
-    font-size: 1.2rem;
+/* Card styles for the projects page */
+.card {
+    background-color: #2a2a2a; /* dark card background */
+    border: 1px solid #444;    /* subtle border */
+    border-radius: 10px;
+}
+.card-body {
+    color: #ffffff; /* white text inside cards */
 }
 
+/* =========================================
+   4. FORMS (contact page)
+   ========================================= */
+
+/* Text inputs, email, phone, textarea */
+.form-control {
+    background-color: #2a2a2a; /* dark input background */
+    border: 1px solid #555;    /* grey border */
+    color: #ffffff;            /* white text inside the input */
+}
+.form-control::placeholder {
+    color: #aaaaaa;            /* grey placeholder text */
+}
+.form-control:focus {
+    background-color: #2a2a2a;
+    border-color: #4da3ff;      /* blue border when clicked */
+    color: #ffffff;
+    box-shadow: 0 0 5px #4da3ff; /* blue glow */
+}
+
+/* Labels above inputs */
+.form-label {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* =========================================
+   5. BUTTONS
+   ========================================= */
+
+/* Blue "Submit" / "See My Projects" buttons */
+.btn-primary {
+    background-color: #4da3ff; /* blue */
+    border-color: #4da3ff;
+    color: #ffffff;
+    font-weight: 600;
+}
+.btn-primary:hover {
+    background-color: #3182ce; /* darker blue on hover */
+    border-color: #3182ce;
+    color: #ffffff;
+}
+
+/* =========================================
+   6. FOOTER (bottom of every page)
+   ========================================= */
+
+/* Footer background and text */
 footer {
-    background: linear-gradient(135deg, #3D4899, #962EFF);
-    color: white;
-    padding: 15px;
-    text-align: center;
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+    border-top: 2px solid #4da3ff; /* blue line on top */
 }
 
+/* Footer links (email, GitHub, etc.) */
 footer a {
-    color: #E6C11E;
+    color: #4da3ff !important; /* blue links */
 }
-
-/* Inputs take full width */
-input, textarea {
-    padding: 10px;
-    border: 2px solid #3D4899;
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 1rem;
-}
-
-/* Submit button is larger for touch screens */
-input[type="submit"] {
-    background: linear-gradient(45deg, #3D4899, #962EFF);
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 15px;
-    width: 100%;
-    font-size: 1rem;
-}
-
-video {
-    width: 100%;
-    height: auto;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-}
-@media (min-width: 481px) and (max-width: 960px) {
-
-/*tablet view: 481px to 960px*/
-
-body {
-    font-family: Verdana, Geneva, Arial, sans-serif;
-    background: linear-gradient(45deg, #3D4899, #962EFF);
-    margin: 0;
-    padding: 0;
-}
-
-/*wrapper takes 100% screen width*/
-#wrapper {
-    width: 100%;
-    background-color: white;
-}
-
-header {
-    background: linear-gradient(135deg, #3D4899, #962EFF);
-    color: white;
-    padding: 20px;
-}
-
-header h1 {
-    color: #E6C11E;
-    margin: 0 0 10px 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 15px;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-nav a:hover {
-    background-color: #B4C73C;
-    color: #3D4899;
-}
-
-main {
-    padding: 20px;
-}
-
-main h2 {
-    color: #3D4899;
-    border-bottom: 3px solid #B4C73C;
-    padding-bottom: 8px;
-}
-
-footer {
-    background: linear-gradient(135deg, #3D4899, #962EFF);
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-footer a {
-    color: #E6C11E;
-}
-
-/*inputs takes full width on tablet */
-input, textarea {
-    padding: 10px;
-    border: 2px solid #3D4899;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-input[type="submit"] {
-    background: linear-gradient(45deg, #3D4899, #962EFF);
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 12px 24px;
-    width: auto;
-}
-
-/*video and images scales to fit */
-video {
-    max-width: 100%;
-    height: auto;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-}
-
-/*
-   The Colour Palette
-   #3D4899 = Dark Blue
-   #962EFF = Purple
-   #B4C73C = Lime Green
-   #E6C11E = Gold
-   #56F074 = Light Green
-   */
-
-/*body has a linear gradient background at 45 degrees*/
-body {
-    font-family: Verdana, Geneva, Arial, sans-serif;
-    background: linear-gradient(45deg, #3D4899, #962EFF);
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-}
-
-/*wrapper keeps content centered at 960px*/
-#wrapper {
-    width: 960px;
-    margin: 0 auto;
-    background-color: white;
-    min-height: 600px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
-}
-
-/*header uses an angled gradient at 135 degrees*/
-header {
-    background: linear-gradient(135deg, #3D4899, #962EFF);
-    color: white;
-    padding: 20px;
-}
-
-header h1 {
-    margin: 0 0 10px 0;
-    color: #E6C11E;
-    font-size: 2rem;
-}
-
-/*navigation links*/
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background 0.3s, color 0.3s;
-}
-
-/*hover effect on nav links*/
-nav a:hover {
-    background-color: #B4C73C;
-    color: #3D4899;
-}
-
-/*main content area*/
-main {
-    padding: 25px;
-    min-height: 400px;
-}
-
-main h2 {
-    color: #3D4899;
-    border-bottom: 3px solid #B4C73C;
-    padding-bottom: 8px;
-}
-
-main h3 {
-    color: #962EFF;
-}
-
-/*AAbout me form input fields*/
-input, textarea {
-    padding: 10px;
-    border: 2px solid #3D4899;
-    border-radius: 5px;
-    font-size: 1rem;
-    width: 100%;
-    max-width: 400px;
-    box-sizing: border-box;
-}
-
-input:focus, textarea:focus {
-    border-color: #962EFF;
-    outline: none;
-    box-shadow: 0 0 5px #962EFF;
-}
-
-/*submit button*/
-input[type="submit"] {
-    background: linear-gradient(45deg, #3D4899, #962EFF);
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 12px 24px;
-    width: auto;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-input[type="submit"]:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-/*footer angled gradient*/
-footer {
-    background: linear-gradient(135deg, #3D4899, #962EFF);
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-footer a {
-    color: #E6C11E;
-}
-
 footer a:hover {
-    color: #B4C73C;
+    color: #ffffff !important; /* white on hover */
 }
 
-/*video styling*/
+/* =========================================
+   7. VIDEO (About page)
+   ========================================= */
+
+/* Video player gets rounded corners and a border */
 video {
-    border: 3px solid #3D4899;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    margin-top: 10px;
+    border: 2px solid #4da3ff; /* blue border */
 }
 
-/*image styling*/
-img {
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    margin: 10px 0;
+/* =========================================
+   8. RESPONSIVE (mobile adjustments)
+   ========================================= */
+
+/* On small screens, reduce heading sizes */
+@media (max-width: 768px) {
+    body { font-size: 14px; }
+    h1 { font-size: 2rem; }
+    main { padding: 15px; }
 }

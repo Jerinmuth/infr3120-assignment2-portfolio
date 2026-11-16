@@ -13,7 +13,7 @@ router.get('/about', function(req, res) {
 
 // 3. Projects page route
 router.get('/projects', function(req, res) {
-  res.render('projects', { title: 'My Projects' });
+  res.render('my-projects', { title: 'My Projects' });
 });
 
 // 4. Contact page route (GET means just looking)

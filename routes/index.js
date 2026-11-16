@@ -18,12 +18,12 @@ router.get('/projects', function(req, res) {
 
 // 4. Contact page route (GET means just looking)
 router.get('/contact', function(req, res) {
-  res.render('contact', { title: 'To Contact Me' });
+  res.render('contact-me', { title: 'Contact Me' });
 });
 
-// 5. Contact form submission (POST means they clicked Submit)
+// 5. Contact form submission (Post or Submit)
 router.post('/contact', function(req, res) {
-  // Print what they typed to the terminal to check it works
+  // Print what they typed to the terminal 
   console.log(req.body);
   res.render('thanks', { title: 'Thank You' });
 });

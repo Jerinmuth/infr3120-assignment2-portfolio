@@ -1,3 +1,9 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<%- include('components/header') %>
+
+<section class="text-center my-5">
+  <h1>Oops!</h1>
+  <p><%= message %></p>
+  <a href="/" class="btn btn-primary">Back to Home</a>
+</section>
+
+<%- include('components/footer') %>

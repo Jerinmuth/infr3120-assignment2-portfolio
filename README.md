@@ -13,6 +13,6 @@
 - Express Generator starter files: https://expressjs.com/en/starter/generator.html
 - Bootstrap navbar and grid: https://getbootstrap.com
 - Font Awesome icons: https://fontawesome.com
-- Images, video, text, and CSS reused from my own Assignment 1 (allowed by instructor)
-- Course lecture code (INFR3120)
-- Starter code and explanations assisted by an AI tutor (approved by instructor)
+- Images, video, information, and CSS reused from my own Assignment 1 (allowed by instructor)
+- Course (INFR 3120)
+  

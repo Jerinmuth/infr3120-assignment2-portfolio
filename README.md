@@ -1,7 +1,5 @@
 # INFR3120 Assignment 2 - Express Portfolio
 
-**Live Site:** (paste your Render URL here after deployment)
-**Author:** Jerin Muthalakuzhiyil
 
 ## What I used
 - Node.js and Express (express-generator with --view=ejs)
